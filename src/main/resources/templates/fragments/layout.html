@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org" th:fragment="layout(content)">
+<head>
+    <link rel="stylesheet" href="../static/css/uikit.min.css" th:href="@{/css/uikit.css}">
+    <script src="../static/js/uikit.min.js" th:src="@{/js/uikit.js}"></script>
+    <script src="../static/js/uikit-icons.min.js" th:src="@{/js/uikit-icons.js}"></script>
+</head>
+<body>
+
+<div th:insert="~{fragments/navbar :: navbar}"></div>
+
+<div th:insert="${content}" class="uk-container uk-margin-large-top"></div>
+
+</body>
+</html>
